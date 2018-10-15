@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "bodet-statustitle": "Status of my requests",
+        "bodet-count": "Count",
+        "bodet-type": "Type",
+        "bodet-dates": "Dates",
+        "bodet-status": "Status",
+        "bodet-footer": "Go to Bodet portal",
+        "bodet-norequest-message": "No leaves requested",
+        "bodet-interval-date": "From {beginDate} to {endDate}",
+        "bodet-error-message": "Your widget configuration is not correctly filled, please contact your administrator"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "bodet-statustitle": "Statut de mes requêtes",
+        "bodet-count": "Nombre",
+        "bodet-type": "Type",
+        "bodet-dates": "Dates",
+        "bodet-status": "Statut",
+        "bodet-footer": "Accéder à mon portail Bodet",
+        "bodet-norequest-message": "Aucune demande d'absence",
+        "bodet-interval-date": "Du {beginDate} au {endDate}",
+        "bodet-error-message": "Votre configuration de widget n'est pas correctement renseignée, veuillez contacter votre administrateur"
+    }
+}
