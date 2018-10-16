@@ -1,4 +1,4 @@
-import { GlobalOptions } from 'highcharts'
+import { GlobalOptions, numberFormat } from 'highcharts'
 
 export const uxpTheme: GlobalOptions = {
     chart: {
@@ -13,18 +13,31 @@ export const uxpTheme: GlobalOptions = {
     plotOptions: {
         pie: {
             showInLegend: true, // allow to see a legend below the graph
-        },
-        series: {
             animation: {
                 duration: 500
             },
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                formatter: function (this: {y: string}) {
-                    return this.y; // display the values inside the pie
+                distance: -25,
+                formatter: function (this: {y: number, point: { z: number}}) {
+                    if (this.y == 0) {
+                        return '';
+                    }
+
+                    return `${numberFormat(this.y, 0, ',', ' ')} - ${numberFormat(this.point.z, 0, ',', ' ')}€`;
                 },
-                style: { 'color': '#FFFFFF', 'fontSize': '1.2em', 'fontFamily': 'robotoregular' } // number's style in the pie
+                shadow: {
+                    opacity: 0.05,
+                    width: 0.4
+                },
+                align: 'center',
+                style: {
+                    color: '#FFFFFF',
+                    fontSize: '0.8em',
+                    fontWeight: 'normal',
+                    fontFamily: 'robotoregular',
+                } // number's style in the pie
             }
         }
     },
@@ -50,6 +63,8 @@ export const uxpTheme: GlobalOptions = {
         symbolHeight: 20,
         symbolWidth: 20,
         verticalAlign: 'bottom',
+        align: 'center',
+        floating: false,
         width: 370
     }
 };

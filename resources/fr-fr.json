@@ -1,13 +1,11 @@
 {
     "labels": {
-        "bodet-statustitle": "Statut de mes requêtes",
-        "bodet-count": "Nombre",
-        "bodet-type": "Type",
-        "bodet-dates": "Dates",
-        "bodet-status": "Statut",
-        "bodet-footer": "Accéder à mon portail Bodet",
-        "bodet-norequest-message": "Aucune demande d'absence",
-        "bodet-interval-date": "Du {beginDate} au {endDate}",
-        "bodet-error-message": "Votre configuration de widget n'est pas correctement renseignée, veuillez contacter votre administrateur"
+        "partner-title": "Mes notes de frais",
+        "partner-serie-tocomplete": "A compléter",
+        "partner-serie-invalidation": "En cours de validation",
+        "partner-serie-tovalidate": "A valider par mes soins",
+        "partner-serie-validated": "Validées",
+        "partner-tooltip": "Vous avez <b>{point.y}</b> notes de frais au statut <b>'{point.name}'</b> pour un montant de <b>{point.z}€</b>",
+        "partner-from-to": "du {start} au {end}"
     }
 }

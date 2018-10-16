@@ -1,13 +1,11 @@
 {
     "labels": {
-        "bodet-statustitle": "Status of my requests",
-        "bodet-count": "Count",
-        "bodet-type": "Type",
-        "bodet-dates": "Dates",
-        "bodet-status": "Status",
-        "bodet-footer": "Go to Bodet portal",
-        "bodet-norequest-message": "No leaves requested",
-        "bodet-interval-date": "From {beginDate} to {endDate}",
-        "bodet-error-message": "Your widget configuration is not correctly filled, please contact your administrator"
+        "partner-title": "My expenses",
+        "partner-serie-tocomplete": "To complete",
+        "partner-serie-invalidation": "In validation",
+        "partner-serie-tovalidate": "To validate by myself",
+        "partner-serie-validated": "Validated",
+        "partner-tooltip": "There are <b>{point.y}</b> expenses with status <b>'{point.name}'</b> for an amount of <b>{point.z}€</b>",
+        "partner-from-to": "from {start} to {end}"
     }
 }

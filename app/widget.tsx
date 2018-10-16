@@ -8,12 +8,16 @@ import * as en from '../resources/en-gb.json'
 import * as fr from '../resources/fr-fr.json'
 import { uxpTheme, standardColors } from './theme'
 
+import '../asset/widget.less';
+
 const languagePacks = {
     'en-gb': en,
     'fr-fr': fr
 }
 
-const DEFAULT_LANGUAGE = 'en-gb';
+type Language = keyof typeof languagePacks;
+
+const DEFAULT_LANGUAGE: Language = 'en-gb';
 
 highcharts.setOptions(uxpTheme);
 
@@ -33,19 +37,25 @@ export class Widget extends React.Component<WidgetProps, {}> {
 
 
     setTextsOrDefault = () => {
-        let language: string = this.props.language;
+        T.setTexts(this.getLanguagePack());
+        return this.getLanguage();
+    }
 
+    private getLanguage(): Language {
+        let language: string = this.props.language;
         if (!(language in languagePacks)) {
-        } else {
             language = DEFAULT_LANGUAGE;
         }
+        return language as Language;
+    }
 
-        T.setTexts(languagePacks[language as (keyof typeof languagePacks)])
-        return language;
+    private getLanguagePack() {
+        return languagePacks[this.getLanguage()].labels;
     }
 
     public render() {
         this.setTextsOrDefault();
+        const languagePack = this.getLanguagePack();
         const options: highcharts.Options = {
             series: [
                 {
@@ -56,32 +66,52 @@ export class Widget extends React.Component<WidgetProps, {}> {
                     data: [
                         {
                             id: 'ToDo',
-                            name: 'ToDo',
-                            color: standardColors.blue,
-                            y: 12
+                            name: languagePack["partner-serie-tocomplete"],
+                            color: standardColors.purple,
+                            y: 12,
+                            z: 2458
                         },
                         {
                             id: 'InProgress',
-                            name: 'InProgress',
-                            color: standardColors.red,
-                            y: 5
+                            name: languagePack["partner-serie-invalidation"],
+                            color: standardColors.lightBlue,
+                            y: 5,
+                            z: 3874
                         },
                         {
-                            id: 'Submitted',
-                            name: 'Submitted',
-                            color: standardColors.green,
-                            y: 18
+                            id: 'ToValidate',
+                            name: languagePack["partner-serie-tovalidate"],
+                            color: standardColors.lightGrey,
+                            y: 7,
+                            z: 2375
+                        },
+                        {
+                            id: 'Validated',
+                            name: languagePack["partner-serie-validated"],
+                            color: standardColors.orange,
+                            y: 18,
+                            z: 129
                         },
                     ],
                 }
             ],
             title: {
-                text: ""
+                text: '' //languagePack["partner-title"]
             },
+            tooltip: {
+                pointFormat: languagePack["partner-tooltip"],
+                outside: true
+            },
+            chart: {
+                width: 370,
+                height: 400
+            }
         };
         return (
             <div className="widget__container">
                 <div className="widget__wrapper">
+                    <T.span text="partner-title" className="widget-title" />
+                    <T.span text={{key:"partner-from-to", start:'2018-6-15', end:"2018-12-15"}} className="widget-subtitle" />
                     <HighchartsReact
                         highcharts={highcharts}
                         options={options}
