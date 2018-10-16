@@ -37,7 +37,7 @@ export const uxpTheme: GlobalOptions = {
                     fontSize: '0.8em',
                     fontWeight: 'normal',
                     fontFamily: 'robotoregular',
-                } // number's style in the pie
+                }
             }
         }
     },

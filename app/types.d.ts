@@ -1,6 +1,6 @@
 /**
- * this declaration was copied from here: https://github.com/highcharts/highcharts-react/issues/20
- */
+ * this declaration was originally copied from: https://github.com/highcharts/highcharts-react/issues/20
+*/
 
 declare module "highcharts-react-official" {
     import * as React from "react";
