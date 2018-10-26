@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const windgetConf = require('./widget.conf.json');
 
-const partnerName = 'partner Name';
+const widgetName = windgetConf.widgetName;
 
 module.exports = {
     entry: './app/widget.tsx',
@@ -36,7 +37,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js',
-        library: 'integration/' + partnerName,
+        library: 'integration/' + widgetName,
         libraryTarget: 'window'
     },
     plugins: [
