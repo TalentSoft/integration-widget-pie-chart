@@ -67,7 +67,7 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
                 valuePoints.forEach((valuePoint) => {
                     const data = pointsData.find((pointData) => valuePoint.id === pointData.id);
                     if (data) {
-                        data.x = valuePoint.x;
+                        data.y = valuePoint.y;
                         data.z = valuePoint.z;
                     }
                 })
