@@ -2,26 +2,15 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/hylia@^1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/hylia/-/hylia-1.1.7.tgz#b22ba534b5ac06fd3685884d4f623181e63a68e9"
-
-"@talentsoft-opensource/integration-com-layer@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-com-layer/-/integration-com-layer-1.2.0.tgz#15fa5cccdf2bc057b600d3c09d19c5e650a09aea"
-
-"@talentsoft-opensource/integration-dll@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-dll/-/integration-dll-1.2.0.tgz#a56a4ca50958fc9a51e7b0a15353a84a2852e9f3"
+"@talentsoft-opensource/integration-dll@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-dll/-/integration-dll-1.3.0.tgz#1ba7b56e32b9ad652ca38d5d5b0a284143745828"
   dependencies:
-    "@talentsoft-opensource/hylia" "^1.1.7"
-    "@talentsoft-opensource/integration-com-layer" "^1.2.0"
     react "^16.2.0"
-    react-dom "^16.2.0"
 
-"@talentsoft-opensource/integration-widget-contract@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.1.1.tgz#0f2e60b377e65800d257aae29d39106057de5d61"
+"@talentsoft-opensource/integration-widget-contract@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.2.0.tgz#f68d4bb816d5a21a232b518479bfdcd626fa4a07"
 
 "@types/geojson@*":
   version "7946.0.4"
@@ -2316,15 +2305,6 @@ react-dom@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
-
-react-dom@^16.2.0:
-  version "16.6.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.0.tgz#6375b8391e019a632a89a0988bce85f0cc87a92f"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.10.0"
 
 react@^15.6.1:
   version "15.6.2"

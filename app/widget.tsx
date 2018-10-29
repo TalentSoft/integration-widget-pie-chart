@@ -36,44 +36,45 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
         const {myTSHostService} = this.props;
         const languagePack = this.getLanguagePack();
 
-        // This simulates an async api call.
-        // It should be replaced by a call to a data service
-        // that will fetch data from an api and transform it
-        // to fit the DataPoint shape.
-        setTimeout(() => {
-            const data: highcharts.DataPoint[] = [
-                {
-                    id: 'ToDo',
-                    name: languagePack["partner-serie-tocomplete"],
-                    color: standardColors.purple,
-                    y: 12,
-                    z: 2458
-                },
-                {
-                    id: 'InProgress',
-                    name: languagePack["partner-serie-invalidation"],
-                    color: standardColors.lightBlue,
-                    y: 5,
-                    z: 3874
-                },
-                {
-                    id: 'ToValidate',
-                    name: languagePack["partner-serie-tovalidate"],
-                    color: standardColors.lightGrey,
-                    y: 7,
-                    z: 2375
-                },
-                {
-                    id: 'Validated',
-                    name: languagePack["partner-serie-validated"],
-                    color: standardColors.orange,
-                    y: 18,
-                    z: 129
-                },
-            ];
-            this.setState({ data });
-            myTSHostService.setDataIsLoaded();
-        }, 1000);
+        const pointsData: highcharts.DataPoint[] = [
+            {
+                id: 'ToDo',
+                name: languagePack["partner-serie-tocomplete"],
+                color: standardColors.purple
+            },
+            {
+                id: 'InProgress',
+                name: languagePack["partner-serie-invalidation"],
+                color: standardColors.lightBlue
+            },
+            {
+                id: 'ToValidate',
+                name: languagePack["partner-serie-tovalidate"],
+                color: standardColors.lightGrey
+            },
+            {
+                id: 'Validated',
+                name: languagePack["partner-serie-validated"],
+                color: standardColors.orange
+            },
+        ];
+
+        myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api'} )
+            .then((response) => { return response.json() })
+            .then((data) => {
+                const valuePoints = data as highcharts.DataPoint[];
+
+                valuePoints.forEach((valuePoint) => {
+                    const data = pointsData.find((pointData) => valuePoint.id === pointData.id);
+                    if (data) {
+                        data.x = valuePoint.x;
+                        data.z = valuePoint.z;
+                    }
+                })
+
+                this.setState({ data: pointsData });
+                myTSHostService.setDataIsLoaded();
+            })
     }
 
     private setTextsOrDefault() {
