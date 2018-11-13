@@ -26,6 +26,28 @@ const DEFAULT_LANGUAGE: Language = 'en-gb';
 
 highcharts.setOptions(uxpTheme);
 
+function getPointsPresentationData(languagePack: LanguagePack): { [id: string]: {name: string, color: string} } {
+    return {
+        'ToDo': {
+            name: languagePack["partner-serie-tocomplete"],
+            color: standardColors.purple
+        },
+        'InProgress': {
+            name: languagePack["partner-serie-invalidation"],
+            color: standardColors.lightBlue
+        },
+        'ToValidate': {
+            name: languagePack["partner-serie-tovalidate"],
+            color: standardColors.lightGrey
+        },
+        'Validated': {
+            name: languagePack["partner-serie-validated"],
+            color: standardColors.orange
+        },
+    };
+}
+
+
 export class Widget extends React.Component<WidgetProps, {data: highcharts.DataPoint[]}> {
     constructor(props: WidgetProps) {
         super(props);
@@ -34,45 +56,11 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
 
     private getData() {
         const {myTSHostService} = this.props;
-        const languagePack = this.getLanguagePack();
-
-        const pointsData: highcharts.DataPoint[] = [
-            {
-                id: 'ToDo',
-                name: languagePack["partner-serie-tocomplete"],
-                color: standardColors.purple
-            },
-            {
-                id: 'InProgress',
-                name: languagePack["partner-serie-invalidation"],
-                color: standardColors.lightBlue
-            },
-            {
-                id: 'ToValidate',
-                name: languagePack["partner-serie-tovalidate"],
-                color: standardColors.lightGrey
-            },
-            {
-                id: 'Validated',
-                name: languagePack["partner-serie-validated"],
-                color: standardColors.orange
-            },
-        ];
-
         myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api'} )
             .then((response) => { return response.json() })
             .then((data) => {
                 const valuePoints = data as highcharts.DataPoint[];
-
-                valuePoints.forEach((valuePoint) => {
-                    const data = pointsData.find((pointData) => valuePoint.id === pointData.id);
-                    if (data) {
-                        data.y = valuePoint.y;
-                        data.z = valuePoint.z;
-                    }
-                })
-
-                this.setState({ data: pointsData });
+                this.setState({ data: valuePoints });
                 myTSHostService.setDataIsLoaded();
             })
     }
@@ -124,7 +112,15 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
     public render() {
         this.setTextsOrDefault();
         const languagePack = this.getLanguagePack();
-        const expenseData = this.state.data;
+        const presentation = getPointsPresentationData(languagePack);
+        const expenseData = this.state.data.map(p => {
+            const newPoint = {...p};
+            if (newPoint.id) {
+                newPoint.name = presentation[newPoint.id].name;
+                newPoint.color = presentation[newPoint.id].color;
+            }
+            return newPoint;
+        });
         const options = this.getOptions(languagePack);
         options.series![0].data = expenseData
         return (
