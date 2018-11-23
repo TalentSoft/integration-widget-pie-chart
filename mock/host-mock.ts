@@ -12,6 +12,9 @@ import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-de
 import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
 
 const hostmock: HostMock = {
+    secretKey: "mysec",
+    login: "sbergot",
+    proxyMode: true,
     requestExternalResource: (options: RequestOptions) => {
         const data = [
             {
