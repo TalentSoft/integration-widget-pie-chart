@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@talentsoft-opensource/integration-dll": "^1.3.0",
-    "@talentsoft-opensource/integration-widget-contract": "^1.2.0",
     "@types/react": "^16.4.16",
     "highcharts": "^6.1.4",
     "highcharts-react": "^0.0.3",
@@ -24,7 +23,8 @@
     "react": "^16.5.2"
   },
   "devDependencies": {
-    "@talentsoft-opensource/widget-display-tool": "2.0.0-alpha.3",
+    "@talentsoft-opensource/integration-widget-contract": "^1.3.0",
+    "@talentsoft-opensource/widget-display-tool": "2.1.0-RC1",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
