@@ -39,6 +39,12 @@ Build the package for debug and watch for file modifications
 yarn watch
 ```
 
+Launch the testing tool
+
+```
+yarn display
+```
+
 When the widget is successfully built, it creates a folder `dist` with a
 `main.bundle.js` inside. When the widget is ready you can send the file to Talentsoft.
 
@@ -84,3 +90,9 @@ send information using the provided methods (eg to notify the hos that the
 loading has finished).
 
 You can find the host api reference here: [Host api reference](node_modules/@talentsoft-opensource/integration-widget-contract/dist/doc/readme.md)
+
+Testing
+=======
+
+You can use the widget display tool to test a widget. Please see [this
+link](node_modules/@talentsoft-opensource/widget-display-tool/readme.md) for more information.
