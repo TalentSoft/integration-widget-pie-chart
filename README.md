@@ -81,6 +81,16 @@ loaded.
 If you want to use a different preprocessor or directly css you can edit
 the webpack configuration.
 
+Host api
+========
+
+The widget receive a number of properties that allows it to communicate with
+the host page. It receives data (current language, display mode, etc) and can
+send information using the provided methods (eg to notify the host that the
+loading has finished).
+
+You can find the host api reference here: [Host api reference](node_modules/@talentsoft-opensource/integration-widget-contract/dist/doc/readme.md)
+
 Testing
 =======
 
