@@ -1,15 +1,17 @@
 {
   "name": "integration-widget-pie-chart",
-  "version": "1.2.0",
+  "version": "1.3.0-alpha.1",
   "description": "A template for a pie chart widget",
   "main": "index.js",
   "repository": "https://bitbucket.org/talentsoft/integration-widget-pie-chart.git",
   "author": "Simon Bergot <sbergot@talentsoft.com>",
   "license": "MIT",
   "scripts": {
-    "build" : "webpack -p",
+    "build": "webpack -p",
     "build:debug": "webpack -d",
-    "watch": "webpack --watch -d"
+    "watch": "webpack --watch -d",
+    "build:mock": "tsc --lib es2015,dom ./mock/host-mock.ts --outDir ./dist",
+    "display": "node ./node_modules/@talentsoft-opensource/widget-display-tool/start.js ../../../dist/main.bundle.js ../../../dist/host-mock.js"
   },
   "dependencies": {
     "@talentsoft-opensource/integration-dll": "^1.3.0",
@@ -22,6 +24,7 @@
     "react": "^16.5.2"
   },
   "devDependencies": {
+    "@talentsoft-opensource/widget-display-tool": "2.0.0-alpha.3",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
