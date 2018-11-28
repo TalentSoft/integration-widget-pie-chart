@@ -9,8 +9,9 @@
   "scripts": {
     "build": "webpack -p",
     "build:debug": "webpack -d",
-    "watch": "webpack --watch -d",
+    "build:doc": "node ./copy_doc.js",
     "build:mock": "tsc --lib es2015,dom ./mock/host-mock.ts --outDir ./dist",
+    "watch": "webpack --watch -d",
     "display": "node ./node_modules/@talentsoft-opensource/widget-display-tool/start.js ../../../dist/main.bundle.js ../../../dist/host-mock.js"
   },
   "dependencies": {
@@ -20,7 +21,9 @@
     "highcharts-react": "^0.0.3",
     "highcharts-react-official": "^1.4.0",
     "i18n-react": "^0.6.4",
-    "react": "^16.5.2"
+    "ncp": "^2.0.0",
+    "react": "^16.5.2",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "@talentsoft-opensource/integration-widget-contract": "^1.3.0",
