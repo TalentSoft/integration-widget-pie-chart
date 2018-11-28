@@ -10,8 +10,7 @@
     "build": "webpack -p",
     "build:debug": "webpack -d",
     "watch": "webpack --watch -d",
-    "build:mock": "tsc --lib es2015,dom ./mock/host-mock.ts --outDir ./dist",
-    "display": "node ./node_modules/@talentsoft-opensource/widget-display-tool/start.js ../../../dist/main.bundle.js ../../../dist/host-mock.js"
+    "display": "node ./display.js"
   },
   "dependencies": {
     "@talentsoft-opensource/integration-dll": "^1.3.0",
@@ -20,11 +19,12 @@
     "highcharts-react": "^0.0.3",
     "highcharts-react-official": "^1.4.0",
     "i18n-react": "^0.6.4",
-    "react": "^16.5.2"
+    "react": "^16.5.2",
+    "winston": "^3.1.0"
   },
   "devDependencies": {
     "@talentsoft-opensource/integration-widget-contract": "^1.3.0",
-    "@talentsoft-opensource/widget-display-tool": "2.1.0-RC4",
+    "@talentsoft-opensource/widget-display-tool": "2.1.0-RC6",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",

@@ -11,10 +11,27 @@ The method getConfiguration returns mocked configuration parameters for your wid
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
 import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
 
-const hostmock: HostMock = {
-    secretKey: "mysec",
-    login: "sbergot",
+export const hostmock: HostMock = {
+    /**
+     * This flag controls the requestExternalResource behavior:
+     * - proxyMode: true => makes a real http request
+     * - proxyMode: false => calls the mocked version defined in this file
+     */
     proxyMode: true,
+
+    /**
+     * if proxyMode == true, use this secretkey for directConnect
+     */
+    secretKey: "mysec",
+
+    /**
+     * if proxyMode == true, use this login for directConnect
+     */
+    login: "mylogin",
+
+    /**
+     * if proxyMode == false, use this method instead of sending a request
+     */
     requestExternalResource: (options: RequestOptions) => {
         const data = [
             {
@@ -48,6 +65,19 @@ const hostmock: HostMock = {
             resolve(response);
         });
     },
-}
 
-export default hostmock;
+    /**
+     * This object is passed to the *params* prop in the widget
+     */
+    configuration: {
+        foo: "bar"
+    },
+
+    /**
+     * This function is called to generate the autoconnect url when using
+     * openUrlinNewTab or openUrlinCurrentTab
+     */
+    getAutoConnectUrl(url: string): string {
+        return url;
+    }
+}
