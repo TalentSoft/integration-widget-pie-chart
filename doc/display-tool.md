@@ -6,9 +6,9 @@ This tool simulates the display of your widget locally
 
 1. You should have the following software installed:
 
-- git
-- node 8.12
-- yarn 1.10.1
+    - git
+    - node 8.12
+    - yarn 1.10.1
 
 2. The first time you use this tool, you need to install the libraries by
 running `yarn install` in a terminal in the project folder (defined in
