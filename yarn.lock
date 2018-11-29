@@ -40,10 +40,10 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.1.0-RC9":
-  version "2.1.0-RC9"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-RC9.tgz#f387f1cf9f29bf6c04d61d954c9419a7a22a0012"
-  integrity sha512-JUNcBKqgHDiS7OATZuuI4y4fo9yy0IvMjWQGQ3mqml4WNOlwmEpkcxX64u5rflryxOQORKnJokgKCI0vyjEDKg==
+"@talentsoft-opensource/widget-display-tool@2.1.0-RC10":
+  version "2.1.0-RC10"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-RC10.tgz#80749148b0f7d9104ed3768ab6d7016bb41787e0"
+  integrity sha512-KM+Ml8phiRFZ3pLzJ1oimutlDPQlK3cx/7pZ0UW4i/1KyZcjzOB86W76B8yXviJIfH/2ARxFlBEQY8/SjkjufQ==
   dependencies:
     "@talentsoft-opensource/display-tool-widget-mock" "^1.2.0"
     "@talentsoft-opensource/integration-dll" "^1.3.0"
