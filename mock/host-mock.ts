@@ -8,11 +8,12 @@ widget for redirecting to your application : by default, openPartnerLink does no
 
 The method getConfiguration returns mocked configuration parameters for your widget in the format key-value.
 */
-import { HostApiOptions } from '@talentsoft-opensource/widget-display-tool/src/host-api-options'
+import { HostApiOptions, RequestOptionsWithPartner, PartnerUrl, AppHeaderActions } from '@talentsoft-opensource/widget-display-tool/src/app-service-params'
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
+import { HttpResponse } from '@talentsoft-opensource/integration-widget-contract'
 
 const hostmock: HostMock = {
-    requestExternalResource: (options: HostApiOptions) => {
+    requestExternalResource: (options: RequestOptionsWithPartner) => {
         const data = [
             {
                 id: 'ToDo',
@@ -36,14 +37,18 @@ const hostmock: HostMock = {
             },
         ];
     
-        return new Promise<Response>((resolve, reject) => {
-            const response = new Response(JSON.stringify(data));
+        return new Promise<HttpResponse>((resolve, reject) => {
+            const response: HttpResponse = {
+                headers: {"": undefined},
+                body: JSON.stringify(data),
+                status: 200
+            }
             resolve(response);
         });
     },
     
     // By default, this is a no operation
-    openPartnerLink: (url: string) => {
+    openPartnerLink: (url: PartnerUrl) => {
         return Promise.resolve();
     },
 
@@ -53,6 +58,10 @@ const hostmock: HostMock = {
     
     getConfiguration: () : { [name: string]: string } => {
         return { };
+    },
+
+    setActionHeaders: (appActions: AppHeaderActions) => {
+        return Promise.resolve();
     }
 }
 
