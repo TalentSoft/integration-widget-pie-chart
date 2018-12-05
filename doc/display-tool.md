@@ -1,6 +1,6 @@
 # Getting Started:
 
-This tool simulates the display of your widget locally
+This tools provides a testing environnement for your widget.
 
 # Prerequisites:
 
@@ -15,33 +15,36 @@ running `yarn install` in a terminal in the project folder (defined in
 package.json)
 
 3. You should already have built your widget on your machine and generated a
-bundle file (for example, main.bundle.js) on your local drive.
+widget bundle file (for example, main.bundle.js) on your local drive. You also
+need a mock bundle file. Please check the [exemple
+widget](https://github.com/TalentSoft/integration-widget-pie-chart) for a
+template to generate such bundles.
 
 # How to launch:
 
-To launch the build and deployment of your widget locally:
-
-- **recommended** If a display script as been configured, you can use it by
-running `yarn display` in the widget folder.
-
-- If you want to run the display tool from its own folder, run: `yarn start
+To launch the build and deployment of your widget, run `yarn start
 [path to your widget bundle (widget)] [path to your mock script]`
 
-# Display the widget:
+# Displaying the widget:
 
 Once it's launched, you can view your widget by opening a browser and
-navigating to: http://localhost:5555/
+navigating to: http://localhost:5555/.
 
-# Configure port number of local url
+# Configuring the port number of local url
 
 If you need to change the port number of the local url, you can change the port
-variable in the file display.js in the widget folder or stat.js in the tool
-folder.
+variable in the file stat.js in the tool folder.
 
-# Customize data displayed by your widget:
+# Customizing the environment of the widget with the mock file
 
-You need to provide a mock script that exports an object that implements the
-`HostMock` interface.
+In the testing environment provided by this tool, all host methods such as
+`requestExternalResource` are mocked. You may provide your own implementation
+to test your widget in different conditions.
+
+In order to do this you need to provide a mock script that exports an object
+that implements the `HostMock` interface. Please check the [exemple
+widget](https://github.com/TalentSoft/integration-widget-pie-chart) for an
+exemple mock script (in the mock folder).
 
 ## Example
 

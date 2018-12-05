@@ -84,4 +84,6 @@ Testing
 
 It is recommended to use the testing tool by running the `yarn display` command.
 
+The testing tool will simulate the environment by providing a mock for the host api. You can customize those mocks by modififying the mock file located [here](mock/host-mock.ts).
+
 For more information please see [this link](doc/display-tool.md).
