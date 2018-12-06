@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@talentsoft-opensource/integration-widget-contract": "^1.4.0-pre1",
-    "@talentsoft-opensource/widget-display-tool": "2.1.0-testpre4",
+    "@talentsoft-opensource/widget-display-tool": "2.1.0-testpre6",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
