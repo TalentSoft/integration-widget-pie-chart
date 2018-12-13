@@ -53,8 +53,7 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
         super(props);
         this.state = { data: [] };
 
-        // To uncomment if your widget is enlargeable
-        //this.defineActionHeaders();
+        this.defineActionHeaders();
     }
 
     private getData() {
@@ -110,7 +109,8 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
 
     defineActionHeaders() {
         const {myTSHostService} = this.props;
-        myTSHostService.setActionHeaders({enlargeable: true});
+        // Set to true to define your widget as enlargeable
+        myTSHostService.setHeaderActionConfiguration({enlargeable: false});
     }
 
     public componentDidMount() {

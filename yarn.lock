@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@^1.3.0-pre1":
-  version "1.3.0-pre1"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.3.0-pre1.tgz#a9952ad1f833b1c0a2bfc2e10ed4efce7cf0cad4"
+"@talentsoft-opensource/display-tool-widget-mock@^1.3.0-pre2":
+  version "1.3.0-pre2"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.3.0-pre2.tgz#9d3c2cb2b671da082c5406d55dca13a58804a3d7"
   dependencies:
     "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.0-pre1"
+    "@talentsoft-opensource/integration-widget-contract" "^1.4.0-pre2"
     react "^16.2.0"
 
 "@talentsoft-opensource/hylia@^1.1.7":
@@ -20,9 +20,9 @@
   dependencies:
     react "^16.2.0"
 
-"@talentsoft-opensource/integration-widget-component@^1.6.0-pre4":
-  version "1.6.0-pre4"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.0-pre4.tgz#3d7945bd69581255846a5dd9ea4e3b8ec42c3cb5"
+"@talentsoft-opensource/integration-widget-component@^1.6.0-pre5":
+  version "1.6.0-pre5"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.0-pre5.tgz#2e6d15b1da05358eac0afcedb752e95a635c036a"
   dependencies:
     "@talentsoft-opensource/hylia" "^1.1.7"
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
@@ -30,9 +30,9 @@
     react "^16.2.0"
     react-dom "^16.5.1"
 
-"@talentsoft-opensource/integration-widget-contract@^1.4.0-pre1":
-  version "1.4.0-pre1"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.0-pre1.tgz#58ce5f6cbbf856d2fa6df3318483a3de2d2c6d50"
+"@talentsoft-opensource/integration-widget-contract@^1.4.0-pre2":
+  version "1.4.0-pre2"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.0-pre2.tgz#8d935adfb0cb3d3ce3be20687841cb508c0e69d6"
 
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -40,14 +40,14 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.1.0-testpre6":
-  version "2.1.0-testpre6"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-testpre6.tgz#4258df115ff76ec5a5504cadff40584873baabec"
+"@talentsoft-opensource/widget-display-tool@2.1.0-testpre7":
+  version "2.1.0-testpre7"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-testpre7.tgz#90d54b28960c3ad89eb3da4a56d86e1836257acb"
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "^1.3.0-pre1"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.3.0-pre2"
     "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-component" "^1.6.0-pre4"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.0-pre1"
+    "@talentsoft-opensource/integration-widget-component" "^1.6.0-pre5"
+    "@talentsoft-opensource/integration-widget-contract" "^1.4.0-pre2"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"
     "@types/react-collapsible" "^2.2.0"

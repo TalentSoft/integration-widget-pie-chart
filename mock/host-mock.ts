@@ -9,7 +9,7 @@ widget for redirecting to your application : by default, openPartnerLink does no
 The method getConfiguration returns mocked configuration parameters for your widget in the format key-value.
 */
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
-import { HttpResponse, RequestOptions, ActionsInHeader } from '@talentsoft-opensource/integration-widget-contract'
+import { HttpResponse, RequestOptions, HeaderActionConfiguration } from '@talentsoft-opensource/integration-widget-contract'
 
 const hostmock: HostMock = {
     requestExternalResource: (options: RequestOptions) => {
@@ -51,6 +51,7 @@ const hostmock: HostMock = {
         return Promise.resolve();
     },
 
+    // By default, this is a no operation
     loadData: (partnerName: string) => {
         return Promise.resolve([]);
     },
@@ -59,7 +60,8 @@ const hostmock: HostMock = {
         return { };
     },
 
-    setActionHeaders: (appActions: ActionsInHeader) => {
+    // By default, this is a no operation
+    setHeaderActionConfiguration: (configuration: HeaderActionConfiguration) => {
         return Promise.resolve();
     }
 }
