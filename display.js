@@ -1,12 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 const displayTool = require('@talentsoft-opensource/widget-display-tool');
-const loggerFactory = require('./loggerFactory');
+const logging = require('./logging');
 const webpackConfiguration = require('./webpack.config');
 const widgetName = require('./widget.conf.json').widgetName;
+const opn = require('opn');
 
 
-const logger = loggerFactory('main');
+const logger = logging.defaultLogger;
 logger.info('starting webpack watch on widget code...');
 
 let displayToolStarted = false;
@@ -31,14 +32,18 @@ compiler.watch(
             displayToolStarted = true;
             const widgetBundlePath = path.resolve('./dist/' + widgetName + '.bundle.js');
             const hostmockBundlePath = path.resolve('./dist/hostmock.bundle.js');
+            const port = 5555;
             logger.info("starting the display tool...");
             displayTool({
-                port: 5555,
-                loggerFactory,
+                port,
+                loggerFactory: logging.loggerFactory,
                 bundleFile: widgetBundlePath,
                 mockFile: hostmockBundlePath,
-                proxyPort: 3000
             });
-            logger.info("open a browser and navigate to http://localhost:5555 to test your widget");
+
+            // this line will open a browser 
+            logger.info("opening a browser to test your widget");
+            logger.info("if you want to disable this behavior please edit the display.js file");
+            opn('http://localhost:' + port);
         }
     })

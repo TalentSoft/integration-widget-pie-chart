@@ -40,10 +40,10 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.1.0-RC11":
-  version "2.1.0-RC11"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-RC11.tgz#318f96ca12b90dda3d19bba054d819f13e2b2437"
-  integrity sha512-iumquJZsnIZrijEFLkcski2nRdELmrIDXmA/3M+dohs+b+6CZO5E7jQf7f3CS9Y091ADWC2lz5QxKxeX3/Ds5g==
+"@talentsoft-opensource/widget-display-tool@2.1.0-RC12":
+  version "2.1.0-RC12"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.1.0-RC12.tgz#512cdd152842d21d56cdfe96fb669c54b30b310c"
+  integrity sha512-0TvgE0LY8loWJGACjSLYRZE4e7cKTWfS1IPWtS/mW5nRrbB2QsnCF2vJqjKiZSq+L7We4+yOsahHuUlQfgTc5A==
   dependencies:
     "@talentsoft-opensource/display-tool-widget-mock" "^1.2.0"
     "@talentsoft-opensource/integration-dll" "^1.3.0"
@@ -53,6 +53,7 @@
     "@types/react" "^16.3.18"
     "@types/react-collapsible" "^2.2.0"
     "@types/react-dom" "^16.0.6"
+    body-parser "^1.18.3"
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "^4.5.1"
     css-loader "^0.28.11"
@@ -503,7 +504,7 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
 
-body-parser@1.18.3:
+body-parser@1.18.3, body-parser@^1.18.3:
   version "1.18.3"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.18.3.tgz#5b292198ffdd553b3a0f20ded0592b956955c8b4"
   dependencies:
@@ -2973,7 +2974,7 @@ one-time@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/one-time/-/one-time-0.0.4.tgz#f8cdf77884826fe4dff93e3a9cc37b1e4480742e"
 
-opn@^5.1.0:
+opn@^5.1.0, opn@^5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   dependencies:
