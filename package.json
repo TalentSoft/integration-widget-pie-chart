@@ -23,8 +23,8 @@
     "react": "^16.5.2"
   },
   "devDependencies": {
-    "@talentsoft-opensource/integration-widget-contract": "^1.4.0-pre2",
-    "@talentsoft-opensource/widget-display-tool": "2.1.0-testpre7",
+    "@talentsoft-opensource/integration-widget-contract": "^1.4.0",
+    "@talentsoft-opensource/widget-display-tool": "2.1.0",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
