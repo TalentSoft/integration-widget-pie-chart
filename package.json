@@ -18,7 +18,7 @@
     "@types/react": "^16.4.16",
     "highcharts": "^6.1.4",
     "highcharts-react": "^0.0.3",
-    "highcharts-react-official": "^1.4.0",
+    "highcharts-react-official": "^2.0.0",
     "i18n-react": "^0.6.4",
     "ncp": "^2.0.0",
     "opn": "^5.4.0",
