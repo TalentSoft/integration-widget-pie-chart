@@ -75,8 +75,7 @@ export const hostmock: HostMock = {
      */
     getAutoConnectUrl(url: string): string {
         return url;
-        return Promise.resolve();
-    }
+    },
 
     // By default, this is a no operation
     setHeaderActionConfiguration: (configuration: HeaderActionConfiguration) => {
