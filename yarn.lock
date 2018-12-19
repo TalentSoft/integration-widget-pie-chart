@@ -34,6 +34,11 @@
   version "1.4.0"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.0.tgz#81408256cb83e0ba747ccf879ae2c4d5c22ffdcb"
 
+"@talentsoft-opensource/integration-widget-contract@^1.4.1-TSM-152-1":
+  version "1.4.1-TSM-152-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.1-TSM-152-1.tgz#734c61825894d687a70ea890b3ce1f31c48dc568"
+  integrity sha512-I4qCJdJB6EsHS0g92wG64i6WG+B/p+/RUKzU5YBNYrcBV6EYJFKMXN+IM4ecVMOBbX7zpj2WqEJS4KNNkOFBxQ==
+
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@talentsoft-opensource/uxp-themes/-/uxp-themes-3.0.1.tgz#a2cd12722a0f008b91c9b872ffe6cd3575933947"
