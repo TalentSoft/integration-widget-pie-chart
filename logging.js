@@ -21,11 +21,11 @@ function getFormat(name, colorized) {
     );
 
     return colorized
-        ? format
-        : winston.format.combine(
+        ? winston.format.combine(
             winston.format.colorize(),
             format
-        );
+        )
+        : format;
 }
 
 
