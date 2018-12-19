@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "outDir": "./dist/",
-    "sourceMap": true,
     "strict": true,
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "jsx": "react",
-    "resolveJsonModule": true,
     "lib": [
       "es2015",
       "dom"
-    ]
+    ],
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "resolveJsonModule": true
   },
   "typeRoots": [
     "./node_modules/@types"

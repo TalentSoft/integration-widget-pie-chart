@@ -1,17 +1,31 @@
-/*
-This file contains the callbacks that you can modify to test the display of your widget
-
-The method requestExternalResource allows you to mock the data retrieved by your API : by default, requestExternalResource returns an empty object
-
-The method openPartnerLink allows you to open your application in a new tabulation - this is only relevant if you have a link in your
-widget for redirecting to your application : by default, openPartnerLink does nothing
-
-The method getConfiguration returns mocked configuration parameters for your widget in the format key-value.
-*/
+/**
+ * This file contains the callbacks that you can modify to test the display of your widget
+ */
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
 import { HttpResponse, RequestOptions, HeaderActionConfiguration } from '@talentsoft-opensource/integration-widget-contract'
 
-const hostmock: HostMock = {
+export const hostmock: HostMock = {
+    /**
+     * This flag controls the requestExternalResource behavior:
+     * - proxyMode: true => makes a real http request
+     * - proxyMode: false => calls the mocked version defined in this file
+     */
+    proxyMode: false,
+
+    /**
+     * If proxyMode == true, when a direct connect request is made this secretkey will be used.
+     * It should be identical to the one configured in the remote service that will be accessed.
+     */
+    secretKey: "mysec",
+
+    /**
+     * If proxyMode == true, when a direct connect request is made this login will be used
+     */
+    login: "mylogin",
+
+    /**
+     * If proxyMode == false, this method is called instead of sending a request
+     */
     requestExternalResource: (options: RequestOptions) => {
         const data = [
             {
@@ -38,26 +52,30 @@ const hostmock: HostMock = {
     
         return new Promise<HttpResponse>((resolve, reject) => {
             const response: HttpResponse = {
-                headers: {"": undefined},
                 body: JSON.stringify(data),
-                status: 200
-            }
+                status: 200,
+                headers: {}
+            };
             resolve(response);
         });
     },
-    
-    // By default, this is a no operation
-    openPartnerLink: (url: string) => {
-        return Promise.resolve();
+
+    /**
+     * This object is passed to the *params* prop in the widget.
+     * It may contain any property you need for the widget.
+     * In production, those properties are defined for each 
+     * client but you may provide default values.
+     */
+    configuration: {
+        foo: "bar"
     },
 
-    // By default, this is a no operation
-    loadData: (partnerName: string) => {
-        return Promise.resolve([]);
-    },
-    
-    getConfiguration: () : { [name: string]: string } => {
-        return { };
+    /**
+     * This function is called to generate the autoconnect url when using
+     * openUrlinNewTab or openUrlinCurrentTab
+     */
+    getAutoConnectUrl(url: string): string {
+        return url;
     },
 
     // By default, this is a no operation
@@ -65,5 +83,3 @@ const hostmock: HostMock = {
         return Promise.resolve();
     }
 }
-
-export default hostmock;
