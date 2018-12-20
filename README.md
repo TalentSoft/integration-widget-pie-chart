@@ -15,7 +15,7 @@ Commands
 
 All those commands must be run in a terminal in the repository folder.
 
-Download the dependencies
+Download the dependencies (needed as the first command after a checkout)
 
 ```
 yarn install
@@ -25,18 +25,6 @@ Build the package for production
 
 ```
 yarn build
-```
-
-Build the package for debug
-
-```
-yarn build:debug
-```
-
-Build the package for debug and watch for file modifications
-
-```
-yarn watch
 ```
 
 Launch the testing tool
@@ -94,5 +82,8 @@ You can find the host api reference here: [Host api reference](doc/hostApi/READM
 Testing
 =======
 
-You can use the widget display tool to test a widget. Please see [this
-link](doc/display-tool.md) for more information.
+It is recommended to use the testing tool by running the `yarn display` command.
+
+The testing tool will simulate the environment by providing a mock for the host api. You can customize those mocks by modififying the mock file located [here](mock/host-mock.ts).
+
+For more information please see [this link](doc/display-tool.md).
