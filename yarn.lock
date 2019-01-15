@@ -2,47 +2,41 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@^1.4.0-TSM-152-1":
-  version "1.4.0-TSM-152-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.0-TSM-152-1.tgz#9298cd66342f7236a81e4d882e30bcb10c9cc17a"
-  integrity sha512-YuvhDOXfMeiAOlu7zbMDr8/qg8lpQK5s8ulsFFFKh76hjKNvKOJjPyfybwYNRW8+yf0qGUZTavDeLQBjN6rYFA==
+"@talentsoft-opensource/display-tool-widget-mock@^1.4.0-TSM-152-2":
+  version "1.4.0-TSM-152-2"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.0-TSM-152-2.tgz#45ac96ab81b3c331718e3da0eef81ad4c9406afe"
+  integrity sha512-O1BNF/1fdij2CXVQd3aSmfL+MISsSKO9f2zHZKRU+r5b/sxePTKe63EyGnH3JA/eO0VcAhmU4STtW6iLjjvaqQ==
   dependencies:
-    "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.1-TSM-152-1"
-    react "^16.2.0"
+    "@talentsoft-opensource/integration-dll" "^1.3.1"
+    "@talentsoft-opensource/integration-widget-contract" "^1.4.1-TSM-152-3"
+    react "^16.6.3"
 
 "@talentsoft-opensource/hylia@^1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@talentsoft-opensource/hylia/-/hylia-1.1.7.tgz#b22ba534b5ac06fd3685884d4f623181e63a68e9"
   integrity sha512-H+ntvrB/FZZXNXT0wwPpxXJ7194xdMUtAArxTl0iASwaXMIJdU2dyCptKlxT2YK0BwLQHNaC6w5uyxX2pkNxsA==
 
-"@talentsoft-opensource/integration-dll@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-dll/-/integration-dll-1.3.0.tgz#1ba7b56e32b9ad652ca38d5d5b0a284143745828"
-  integrity sha512-2UUxEcoi/MgxG9XdTOPEIe1lIdqLm2mPLAGPbDWiggMR7RZCtw4A2wwE1xBdsVA+qqZ9AE/WWBTztULv9IeToA==
+"@talentsoft-opensource/integration-dll@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-dll/-/integration-dll-1.3.1.tgz#81f55251dba7ad0324e989b9f1ce797736bd33ec"
+  integrity sha512-W4Z+ponOLzNC+fUofkvH0+pZA4+agQTk09/LXy8fgacY1e0/zPn/sobGxVvt0OtI0BZeEJI1Et3kAiuiabPsZw==
   dependencies:
-    react "^16.2.0"
+    react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-component@^1.6.1-TSM-152-9":
-  version "1.6.1-TSM-152-9"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.1-TSM-152-9.tgz#d4126df4c5fdee4897d7655aabab40149df06a3a"
-  integrity sha512-Rte03wylzYHz5A6LpO4D83avUHALW9p+YJqXFxtmW7eyodet0gLn5o994qB+ElKjJny9ginilPxlWM40HD8gUg==
+"@talentsoft-opensource/integration-widget-component@^1.6.1-TSM-152-13":
+  version "1.6.1-TSM-152-13"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.1-TSM-152-13.tgz#7b97455bc1e114859c8d51bc52c113ec998e484d"
+  integrity sha512-FrzPXBrU9otaqlEhsJ1pBpiKbVfwE3EFOVyGFQp6mXFcEo2cNoJ8FGkTOHDR4+n3YV4vD79FNSdudWcdLvFKSA==
   dependencies:
     "@talentsoft-opensource/hylia" "^1.1.7"
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
-    react "^16.2.0"
-    react-dom "^16.5.1"
+    react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-contract@^1.4.1-TSM-152-1":
-  version "1.4.1-TSM-152-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.1-TSM-152-1.tgz#734c61825894d687a70ea890b3ce1f31c48dc568"
-  integrity sha512-I4qCJdJB6EsHS0g92wG64i6WG+B/p+/RUKzU5YBNYrcBV6EYJFKMXN+IM4ecVMOBbX7zpj2WqEJS4KNNkOFBxQ==
-
-"@talentsoft-opensource/integration-widget-contract@^1.4.1-TSM-152-1":
-  version "1.4.1-TSM-152-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.1-TSM-152-1.tgz#734c61825894d687a70ea890b3ce1f31c48dc568"
-  integrity sha512-I4qCJdJB6EsHS0g92wG64i6WG+B/p+/RUKzU5YBNYrcBV6EYJFKMXN+IM4ecVMOBbX7zpj2WqEJS4KNNkOFBxQ==
+"@talentsoft-opensource/integration-widget-contract@^1.4.1-TSM-152-3":
+  version "1.4.1-TSM-152-3"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.1-TSM-152-3.tgz#de75472a8ba92a12a531b3ecd61ee5db24759e57"
+  integrity sha512-zACck0cBAPaYm7J090N0TKmSUXA7UvNPHZPTLcnR48DIakO6pEilUT+zCM660zRvEQGWKWbCCYXAQK1w+WOL7A==
 
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -51,15 +45,15 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.3.0-TSM-152-6":
-  version "2.3.0-TSM-152-6"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.3.0-TSM-152-6.tgz#e265d97ca4d51bc725a8d8dd24348d6d250c42b6"
-  integrity sha512-ZFrUMJzffGGlK2YducDOXjDF8yMJNYcCiG0mO08zmZeU3JYdJn4wkUMUc1ZCIHxna/+zCQFTVY2aP+Xg15qZLQ==
+"@talentsoft-opensource/widget-display-tool@2.3.0-TSM-152-9":
+  version "2.3.0-TSM-152-9"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.3.0-TSM-152-9.tgz#0fe46ee459ad1dd074b640f610da59811f8c78b3"
+  integrity sha512-h7ko1WLBRSJ9KE22UnvCBpqcCFA7psa0VvbC4ncFpSZciMS+E6eIICNM2GXeLQ98xJd+vZV/DbgAV+NIq21JUg==
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.0-TSM-152-1"
-    "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-component" "^1.6.1-TSM-152-9"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.1-TSM-152-1"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.0-TSM-152-2"
+    "@talentsoft-opensource/integration-dll" "^1.3.1"
+    "@talentsoft-opensource/integration-widget-component" "^1.6.1-TSM-152-13"
+    "@talentsoft-opensource/integration-widget-contract" "^1.4.1-TSM-152-3"
     "@types/js-md5" "^0.4.2"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"
@@ -75,7 +69,7 @@
     less "^3.0.4"
     less-loader "^4.1.0"
     node-fetch "^2.3.0"
-    react "^16.4.1"
+    react "^16.6.3"
     react-dom "^16.4.1"
     style-loader "^0.21.0"
     ts-loader "^5.2.2"
@@ -4178,7 +4172,7 @@ react-dom@^15.6.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-dom@^16.4.1, react-dom@^16.5.1:
+react-dom@^16.4.1:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==
@@ -4199,7 +4193,7 @@ react@^15.6.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react@^16.2.0, react@^16.4.1, react@^16.5.2:
+react@^16.6.3:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
   integrity sha512-StCz3QY8lxTb5cl2HJxjwLFOXPIFQp+p+hxQfc8WE0QiLfCtIlKj8/+5tjjKm8uSTlAW+fCPaavGFS06V9Ar3A==
