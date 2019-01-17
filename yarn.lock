@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.3.0.tgz#540c963873b5258322e95de1d076e2a4be7e849d"
+"@talentsoft-opensource/display-tool-widget-mock@^1.4.0-TSM-160-1":
+  version "1.4.0-TSM-160-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.0-TSM-160-1.tgz#648f6333d24622c7a1378fc0527aab3b3fd46cbf"
   dependencies:
     "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.0"
+    "@talentsoft-opensource/integration-widget-contract" "^1.5.0-TSM-160-1"
     react "^16.2.0"
 
 "@talentsoft-opensource/hylia@^1.1.7":
@@ -20,9 +20,9 @@
   dependencies:
     react "^16.2.0"
 
-"@talentsoft-opensource/integration-widget-component@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.0.tgz#4b8ab577c2b79b1a0c03cf91eb379f4d87511482"
+"@talentsoft-opensource/integration-widget-component@^1.7.0-TSM-160-1":
+  version "1.7.0-TSM-160-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.7.0-TSM-160-1.tgz#4d0f29daed47c0ffb0f98b48193580bfbb261a00"
   dependencies:
     "@talentsoft-opensource/hylia" "^1.1.7"
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
@@ -30,9 +30,9 @@
     react "^16.2.0"
     react-dom "^16.5.1"
 
-"@talentsoft-opensource/integration-widget-contract@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.0.tgz#da5895e019353090c90d8919045c9bcc00d55dea"
+"@talentsoft-opensource/integration-widget-contract@^1.5.0-TSM-160-1":
+  version "1.5.0-TSM-160-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.5.0-TSM-160-1.tgz#59fcd4d81b09835d745c67ccba487ab0356e3d17"
 
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -40,15 +40,14 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.2.2.tgz#94e39d49e9fe8e5f0952e13f51bf6cccbe8d0d83"
-  integrity sha512-r/y48EVlyJXS/Gm0tL3NYK5PZsdifNDvFsrMPtBD2ZeeeGpceMwX+fFDP3JO9Q68p8Qgk0VmDQTs34D2bYe1LA==
+"@talentsoft-opensource/widget-display-tool@2.3.0-TSM-160-2":
+  version "2.3.0-TSM-160-2"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.3.0-TSM-160-2.tgz#26a83920c3492f4a04df5d28e341f2a76cc4c48b"
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "^1.3.0"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.0-TSM-160-1"
     "@talentsoft-opensource/integration-dll" "^1.3.0"
-    "@talentsoft-opensource/integration-widget-component" "^1.6.0"
-    "@talentsoft-opensource/integration-widget-contract" "^1.4.0"
+    "@talentsoft-opensource/integration-widget-component" "^1.7.0-TSM-160-1"
+    "@talentsoft-opensource/integration-widget-contract" "^1.5.0-TSM-160-1"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"
     "@types/react-collapsible" "^2.2.0"
@@ -87,7 +86,6 @@
 "@types/node@*":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
-  integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
 "@types/node@^10.12.11":
   version "10.12.15"
@@ -119,7 +117,6 @@
 "@types/sha1@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/sha1/-/sha1-1.1.1.tgz#ab34efa782ff948d402d896afc9f10f41e94dd44"
-  integrity sha512-Yrz4TPsm/xaw7c39aTISskNirnRJj2W9OVeHv8ooOR9SG8NHEfh4lwvGeN9euzxDyPfBdFkvL/VHIY3kM45OpQ==
   dependencies:
     "@types/node" "*"
 
@@ -754,7 +751,6 @@ chalk@^2.3.0, chalk@^2.4.0, chalk@^2.4.1:
 "charenc@>= 0.0.1":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
-  integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
 chokidar@^2.0.0, chokidar@^2.0.2:
   version "2.0.4"
@@ -1087,7 +1083,6 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
 "crypt@>= 0.0.1":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
-  integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -3920,7 +3915,6 @@ sha.js@^2.4.0, sha.js@^2.4.8:
 sha1@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/sha1/-/sha1-1.1.1.tgz#addaa7a93168f393f19eb2b15091618e2700f848"
-  integrity sha1-rdqnqTFo85PxnrKxUJFhjicA+Eg=
   dependencies:
     charenc ">= 0.0.1"
     crypt ">= 0.0.1"
