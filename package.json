@@ -27,9 +27,9 @@
     "winston": "^3.1.0"
   },
   "devDependencies": {
-    "@talentsoft-opensource/integration-widget-contract": "^1.4.1-TSM-152-3",
-    "@talentsoft-opensource/integration-widget-component": "^1.6.1-TSM-152-13",
-    "@talentsoft-opensource/widget-display-tool": "2.3.0-TSM-152-9",
+    "@talentsoft-opensource/integration-widget-contract": "=1.4.1-TSM-152-3",
+    "@talentsoft-opensource/integration-widget-component": "=1.6.1-TSM-152-14",
+    "@talentsoft-opensource/widget-display-tool": "2.3.0-TSM-152-11",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
