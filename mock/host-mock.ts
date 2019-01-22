@@ -2,7 +2,8 @@
  * This file contains the callbacks that you can modify to test the display of your widget
  */
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
-import { HttpResponse, RequestOptions, HeaderActionConfiguration } from '@talentsoft-opensource/integration-widget-contract'
+import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
+import { AppHeaderActionConfiguration } from '@talentsoft-opensource/integration-widget-component';
 
 export const hostmock: HostMock = {
     /**
@@ -79,7 +80,7 @@ export const hostmock: HostMock = {
     },
 
     // By default, this is a no operation
-    setHeaderActionConfiguration: (configuration: HeaderActionConfiguration) => {
+    setHeaderActionConfiguration: (configuration: AppHeaderActionConfiguration["configuration"]) => {
         return Promise.resolve();
     }
 }

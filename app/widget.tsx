@@ -116,7 +116,13 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
     defineActionHeaders() {
         const {myTSHostService} = this.props;
         // Set to true to define your widget as enlargeable
-        myTSHostService.setHeaderActionConfiguration({enlargeable: false});
+        myTSHostService.setHeaderActionConfiguration({
+            enlargeable: true,
+            customActions: {
+                addAction: () => { /* add click reaction */ },
+                searchAction: () => { /* search click reaction */ }
+            }
+        });
     }
 
     public componentDidMount() {
