@@ -1,6 +1,6 @@
 {
   "name": "integration-widget-pie-chart",
-  "version": "2.1.1-TSM-174-1",
+  "version": "2.1.1",
   "description": "A template for a pie chart widget",
   "main": "index.js",
   "repository": "https://bitbucket.org/talentsoft/integration-widget-pie-chart.git",
