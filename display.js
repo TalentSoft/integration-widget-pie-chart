@@ -25,6 +25,7 @@ compiler.watch(
             modules: false
         }));
         if (err) {
+            logger.error("error while compiling widget");
             logger.error(err);
         }
 
@@ -47,3 +48,4 @@ compiler.watch(
             opn('http://localhost:' + port);
         }
     })
+

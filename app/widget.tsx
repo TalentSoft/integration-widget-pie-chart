@@ -56,21 +56,13 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
         this.defineActionHeaders();
     }
 
-    private getData() {
+    private async getData() {
         const {myTSHostService} = this.props;
-
-        myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api'} )
-            .then((response) => {
-                let data = [];
-                try {
-                    data = JSON.parse(response.body);
-                } catch (e) {
-                    console.log(e);
-                }
-                const valuePoints = data as highcharts.DataPoint[];
-                this.setState({ data: valuePoints });
-                myTSHostService.setDataIsLoaded();
-            })
+        const response = await  myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api'} );
+        let data = JSON.parse(response.body);
+        const valuePoints = data as highcharts.DataPoint[];
+        this.setState({ data: valuePoints });
+        myTSHostService.setDataIsLoaded();
     }
 
     private setTextsOrDefault() {
