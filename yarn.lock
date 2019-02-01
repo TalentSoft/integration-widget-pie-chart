@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@^1.4.1":
+"@talentsoft-opensource/display-tool-widget-mock@^1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.2.tgz#798ef0f12feafe582d110a23aba448bdb4f09ad8"
   dependencies:
@@ -20,15 +20,6 @@
   dependencies:
     react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-component@=1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.6.1.tgz#6c87c0cc45974ceeeaa00706c49d104c43d74d51"
-  dependencies:
-    "@talentsoft-opensource/hylia" "^1.1.7"
-    "@talentsoft-opensource/uxp-themes" "^3.0.1"
-    classnames "^2.2.6"
-    react "^16.6.3"
-
 "@talentsoft-opensource/integration-widget-component@=1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.7.0.tgz#68803d2afb0ad43b8019b2227684d1dbab2beda9"
@@ -37,10 +28,6 @@
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.6.3"
-
-"@talentsoft-opensource/integration-widget-contract@=1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.4.1.tgz#152a410a5d4cdad380381e326aaece5fb43ad757"
 
 "@talentsoft-opensource/integration-widget-contract@=1.5.0", "@talentsoft-opensource/integration-widget-contract@^1.5.0":
   version "1.5.0"
@@ -52,14 +39,14 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.4.1-TSM-174-1":
-  version "2.4.1-TSM-174-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.4.1-TSM-174-1.tgz#fd98e106ce58540ca837f645b025edbf731951a4"
+"@talentsoft-opensource/widget-display-tool@2.4.1-TSM-174-2":
+  version "2.4.1-TSM-174-2"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.4.1-TSM-174-2.tgz#eb63399ad09bffdf3877590ec30eec036c74f9e0"
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.1"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.2"
     "@talentsoft-opensource/integration-dll" "^1.3.2"
-    "@talentsoft-opensource/integration-widget-component" "=1.6.1"
-    "@talentsoft-opensource/integration-widget-contract" "=1.4.1"
+    "@talentsoft-opensource/integration-widget-component" "=1.7.0"
+    "@talentsoft-opensource/integration-widget-contract" "=1.5.0"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"
     "@types/react-collapsible" "^2.2.0"
