@@ -6,6 +6,14 @@
         "partner-serie-tovalidate": "A valider par mes soins",
         "partner-serie-validated": "Validées",
         "partner-tooltip": "Vous avez <b>{point.y}</b> notes de frais au statut <b>'{point.name}'</b> pour un montant de <b>{point.z}€</b>",
-        "partner-from-to": "du {start} au {end}"
+        "partner-from-to": "du {start} au {end}",
+        "partner-expense-object": "Objet de la note",
+        "partner-expense-type": "Nature",
+        "partner-expense-state": "Statut",
+        "partner-expense-amount": "Total dû",
+        "partner-expense-cancel": "Annuler",
+        "partner-expense-status-pending": "Brouillon",
+        "partner-expense-status-waiting-for-validation": "Transmise pour validation",
+        "partner-expense-status-validated": "Validée"
     }
 }

@@ -7,6 +7,7 @@ import * as highcharts from 'highcharts'
 import HighchartsReact from "highcharts-react-official";
 
 import { WidgetProps } from "@talentsoft-opensource/integration-widget-contract"
+import { EnlargedWidget } from './widget-enlarged'
 
 import { uxpTheme, standardColors } from './theme'
 
@@ -130,6 +131,14 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
     }
 
     public render() {
+        if (this.props.myTSHostService.widgetIsEnlarged()) {
+            return (
+                <EnlargedWidget 
+                    widgetProps = {this.props}
+                    languagePack = {this.getLanguagePack()} />
+            );
+        }
+
         this.setTextsOrDefault();
         const languagePack = this.getLanguagePack();
         const presentation = getPointsPresentationData(languagePack);
