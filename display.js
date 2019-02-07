@@ -12,7 +12,7 @@ logger.info('starting webpack watch on widget code...');
 
 let displayToolStarted = false;
 
-const compiler = webpack({ ...webpackConfiguration, mode: 'development' });
+const compiler = webpack({ ...webpackConfiguration(null, { mode: 'development' }), mode: 'development' });
 compiler.watch(
     {
         aggregateTimeout: 300,

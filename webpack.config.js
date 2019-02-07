@@ -3,13 +3,11 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const widgetName = require('./widget.conf.json').widgetName;
 
-module.exports = (env, argv) => {
-    return ({
+config = {
         entry: {
             [widgetName]: './app/widget.tsx',
             hostmock: './mock/host-mock.ts'
         },
-        devtool: argv.mode === "development" ? "eval-source-map" : "none",
         module: {
             rules: [
                 {
@@ -50,4 +48,11 @@ module.exports = (env, argv) => {
                 manifest: require('./node_modules/@talentsoft-opensource/integration-dll/dist/integration-manifest.json')
             })
         ],
-    })};
+    };
+
+module.exports = (env, argv) => {
+    return {
+        ...config,
+        devtool: argv.mode === "development" ? "eval-source-map" : "none",
+    }
+}
