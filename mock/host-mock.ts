@@ -11,7 +11,7 @@ export const hostmock: HostMock = {
      * - proxyMode: true => makes a real http request
      * - proxyMode: false => calls the mocked version defined in this file
      */
-    proxyMode: false,
+    proxyMode: true,
 
     /**
      * If proxyMode == true, when a direct connect request is made this secretkey will be used.
