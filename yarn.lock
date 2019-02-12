@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@^1.4.3-TSM-176-2":
-  version "1.4.3-TSM-176-2"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.3-TSM-176-2.tgz#ec0d1b102eeb9b32a31a79ebd47f1db04631ec84"
+"@talentsoft-opensource/display-tool-widget-mock@^1.4.3-TSM-176-3":
+  version "1.4.3-TSM-176-3"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.3-TSM-176-3.tgz#9a76c55625a8ecc9eff19424a09074518d2196c1"
   dependencies:
     "@talentsoft-opensource/integration-dll" "^1.3.2"
     "@talentsoft-opensource/integration-widget-contract" "^1.6.0-TSM-176-1"
@@ -48,11 +48,11 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.5.0-TSM-176-6":
-  version "2.5.0-TSM-176-6"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.5.0-TSM-176-6.tgz#2fd0ba44fdee35fc8613a1d56324e419df3733d0"
+"@talentsoft-opensource/widget-display-tool@2.5.0-TSM-176-7":
+  version "2.5.0-TSM-176-7"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.5.0-TSM-176-7.tgz#2584f0989b0e8d8556494551f9754d062a3a7ea9"
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.3-TSM-176-2"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.3-TSM-176-3"
     "@talentsoft-opensource/integration-dll" "^1.3.2"
     "@talentsoft-opensource/integration-widget-component" "=1.8.0-TSM-176-5"
     "@talentsoft-opensource/integration-widget-contract" "=1.6.0-TSM-176-1"
