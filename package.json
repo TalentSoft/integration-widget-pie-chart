@@ -28,7 +28,7 @@
   "devDependencies": {
     "@talentsoft-opensource/integration-widget-contract": "=1.6.0-TSM-176-1",
     "@talentsoft-opensource/integration-widget-component": "=1.8.0-TSM-176-4",
-    "@talentsoft-opensource/widget-display-tool": "2.5.0-TSM-176-5",
+    "@talentsoft-opensource/widget-display-tool": "2.5.0-TSM-176-6",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
