@@ -6,6 +6,14 @@
         "partner-serie-tovalidate": "To validate by myself",
         "partner-serie-validated": "Validated",
         "partner-tooltip": "There are <b>{point.y}</b> expenses with status <b>'{point.name}'</b> for an amount of <b>{point.z}€</b>",
-        "partner-from-to": "from {start} to {end}"
+        "partner-from-to": "from {start} to {end}",
+        "partner-expense-object": "Expense Reason",
+        "partner-expense-type": "Nature",
+        "partner-expense-state": "State",
+        "partner-expense-amount": "Total due",
+        "partner-expense-cancel": "Cancel",
+        "partner-expense-status-pending": "Draft",
+        "partner-expense-status-waiting-for-validation": "Sent for validation",
+        "partner-expense-status-validated": "Validated"
     }
 }
