@@ -26,7 +26,7 @@ This interface represents an Http Response
 
 **● body**: *`string`*
 
-*Defined in widget-contract-myts.ts:19*
+*Defined in widget-contract-myts.ts:21*
 
 The body of the response
 
@@ -37,7 +37,7 @@ ___
 
 **● headers**: *`object`*
 
-*Defined in widget-contract-myts.ts:11*
+*Defined in widget-contract-myts.ts:13*
 
 The headers of the response
 
@@ -52,7 +52,7 @@ ___
 
 **● status**: *`number`*
 
-*Defined in widget-contract-myts.ts:15*
+*Defined in widget-contract-myts.ts:17*
 
 The http status of the response
 

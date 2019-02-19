@@ -11,6 +11,7 @@
 ### Properties
 
 * [body](_request_options_.postrequestoptions.md#body)
+* [headers](_request_options_.postrequestoptions.md#headers)
 * [url](_request_options_.postrequestoptions.md#url)
 * [verb](_request_options_.postrequestoptions.md#verb)
 
@@ -24,9 +25,20 @@
 
 **● body**: *`string`*
 
-*Defined in request-options.ts:24*
+*Defined in request-options.ts:32*
 
 The request body.
+
+___
+<a id="headers"></a>
+
+### `<Optional>` headers
+
+**● headers**: *[Headers](_request_options_.headers.md)*
+
+*Defined in request-options.ts:36*
+
+Headers.
 
 ___
 <a id="url"></a>
@@ -35,7 +47,7 @@ ___
 
 **● url**: *`string`*
 
-*Defined in request-options.ts:20*
+*Defined in request-options.ts:28*
 
 The request url.
 
@@ -46,7 +58,7 @@ ___
 
 **● verb**: *"POST"*
 
-*Defined in request-options.ts:16*
+*Defined in request-options.ts:24*
 
 The request verb.
 

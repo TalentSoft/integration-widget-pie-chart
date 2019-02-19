@@ -11,6 +11,7 @@
 ### Properties
 
 * [body](_request_options_.patchrequestoptions.md#body)
+* [headers](_request_options_.patchrequestoptions.md#headers)
 * [url](_request_options_.patchrequestoptions.md#url)
 * [verb](_request_options_.patchrequestoptions.md#verb)
 
@@ -24,9 +25,20 @@
 
 **● body**: *`string`*
 
-*Defined in request-options.ts:54*
+*Defined in request-options.ts:70*
 
 The request body.
+
+___
+<a id="headers"></a>
+
+### `<Optional>` headers
+
+**● headers**: *[Headers](_request_options_.headers.md)*
+
+*Defined in request-options.ts:74*
+
+Headers.
 
 ___
 <a id="url"></a>
@@ -35,7 +47,7 @@ ___
 
 **● url**: *`string`*
 
-*Defined in request-options.ts:50*
+*Defined in request-options.ts:66*
 
 The request url.
 
@@ -46,7 +58,7 @@ ___
 
 **● verb**: *"PATCH"*
 
-*Defined in request-options.ts:46*
+*Defined in request-options.ts:62*
 
 The request verb.
 

@@ -26,7 +26,7 @@ This interface represents the properties that the React widget will receive
 
 **● language**: *`string`*
 
-*Defined in widget-contract-myts.ts:66*
+*Defined in widget-contract-myts.ts:76*
 
 The current user language. Uses a four letter format as defined here: [https://msdn.microsoft.com/en-us/library/hh441729.aspx](https://msdn.microsoft.com/en-us/library/hh441729.aspx)
 
@@ -37,7 +37,7 @@ ___
 
 **● myTSHostService**: *[MyTSHostService](_widget_contract_myts_.mytshostservice.md)*
 
-*Defined in widget-contract-myts.ts:60*
+*Defined in widget-contract-myts.ts:70*
 
 This object exposes a number of methods that allows the widget to communicate with the host page.
 
@@ -48,7 +48,7 @@ ___
 
 **● params**: *`object`*
 
-*Defined in widget-contract-myts.ts:72*
+*Defined in widget-contract-myts.ts:82*
 
 Contains all non sensitive context parameters. The keys must be defined per widget and the values can be defined for each client in the Talentsoft administration.
 
