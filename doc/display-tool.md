@@ -32,8 +32,8 @@ navigating to: http://localhost:5555/.
 
 # Configuring the port number of local url
 
-If you need to change the port number of the local url, you can change the port
-variable in the file stat.js in the tool folder.
+If you need to change the port number of the local url, you can change the `port`
+variable in the file index.js in the root folder.
 
 # Customizing the environment of the widget with the mock file
 
@@ -48,74 +48,102 @@ exemple mock script (in the mock folder).
 
 ## Example
 
-Suppose that your API returns a list of objects with attribute {title, count}
-and you want to mock your API by returning : `[{title='Object1', count=10},
-{title='Object2', count=5}]`
-
-=> You should implement the method loadData in a typescript file as:
+Suppose that your API returns a list of objects
+and you want to mock your API by returning :
 
 ```javascript
-    /*
-    This file contains the callbacks that you can modify to test the display of your widget
+[
+            {
+                id: 'ToDo',
+                y: 0,
+                z: 2458
+            },
+            ...
+]
+```
 
-    The method requestExternalResource allows you to mock the data retrieved by your API : by default, requestExternalResource returns an empty object
+=> You should implement the method requestExternalResource in a typescript file as:
 
-    The method openPartnerLink allows you to open your application in a new tabulation - this is only relevant if you have a link in your
-    widget for redirecting to your application : by default, openPartnerLink does nothing
+```javascript
+/**
+ * This file contains the callbacks that you can modify to test the display of your widget
+ */
+import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
+import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
 
-    The method getConfiguration returns mocked configuration parameters for your widget in the format key-value.
-    */
-    import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
-    import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
+export const hostmock: HostMock = {
+    /**
+     * This flag controls the requestExternalResource behavior:
+     * - proxyMode: true => makes a real http request
+     * - proxyMode: false => calls the mocked version defined in this file
+     */
+    proxyMode: true,
 
-    export const hostmock: HostMock = {
-        /**
-        * This flag controls the requestExternalResource behavior:
-        * - proxyMode: true => makes a real http request
-        * - proxyMode: false => calls the mocked version defined in this file
-        */
-        proxyMode: true,
+    /**
+     * if proxyMode == true, when a direct connect request is made this secretkey will be used
+     */
+    secretKey: "mysec",
 
-        /**
-        * if proxyMode == true, use this secretkey for directConnect
-        */
-        secretKey: "mysec",
+    /**
+     * if proxyMode == true, when a direct connect request is made this login will be used
+     */
+    login: "mylogin",
 
-        /**
-        * if proxyMode == true, use this login for directConnect
-        */
-        login: "mylogin",
+    /**
+     * if proxyMode == false, this method is called instead of sending a request
+     */
+    requestExternalResource: (options: RequestOptions) => {
+        const data = [
+            {
+                id: 'ToDo',
+                y: 0,
+                z: 2458
+            },
+            {
+                id: 'InProgress',
+                y: 0,
+                z: 3874
+            },
+            {
+                id: 'ToValidate',
+                y: 0,
+                z: 2375
+            },
+            {
+                id: 'Validated',
+                y: 0,
+                z: 129
+            },
+        ];
+    
+        return new Promise<HttpResponse>((resolve, reject) => {
+            const response: HttpResponse = {
+                body: JSON.stringify(data),
+                status: 200,
+                headers: {}
+            };
+            resolve(response);
+        });
+    },
 
-        /**
-        * if proxyMode == false, use this method instead of sending a request
-        */
-        requestExternalResource: (options: RequestOptions) => {
-            const data = [{title='Object1', count=10}, {title='Object2', count=5}];
-            return new Promise<HttpResponse>((resolve, reject) => {
-                const response: HttpResponse = {
-                    body: JSON.stringify(data),
-                    status: 200,
-                    headers: {}
-                };
-                resolve(response);
-            });
-        },
+    /**
+     * This object is passed to the *params* prop in the widget.
+     * It may contain any property you need for the widget.
+     * In production, those properties are defined for each 
+     * client but you may provide default values.
+     */
+    configuration: {
+        foo: "bar"
+    },
 
-        /**
-        * This object is passed to the *params* prop in the widget
-        */
-        configuration: {
-            foo: "bar"
-        },
-
-        /**
-        * This function is called to generate the autoconnect url when using
-        * openUrlinNewTab or openUrlinCurrentTab
-        */
-        getAutoConnectUrl(url: string): string {
-            return url;
-        }
+    /**
+     * This function is called to generate the autoconnect url when using
+     * openUrlinNewTab or openUrlinCurrentTab
+     */
+    getAutoConnectUrl(url: string): string {
+        return url;
     }
+}
 ```
 
 This file must be compiled with webpack with a library output set to

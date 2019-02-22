@@ -11,6 +11,7 @@
 ### Properties
 
 * [body](_request_options_.putrequestoptions.md#body)
+* [headers](_request_options_.putrequestoptions.md#headers)
 * [url](_request_options_.putrequestoptions.md#url)
 * [verb](_request_options_.putrequestoptions.md#verb)
 
@@ -24,9 +25,20 @@
 
 **● body**: *`string`*
 
-*Defined in request-options.ts:39*
+*Defined in request-options.ts:51*
 
 The request body.
+
+___
+<a id="headers"></a>
+
+### `<Optional>` headers
+
+**● headers**: *[Headers](_request_options_.headers.md)*
+
+*Defined in request-options.ts:55*
+
+Headers.
 
 ___
 <a id="url"></a>
@@ -35,7 +47,7 @@ ___
 
 **● url**: *`string`*
 
-*Defined in request-options.ts:35*
+*Defined in request-options.ts:47*
 
 The request url.
 
@@ -46,7 +58,7 @@ ___
 
 **● verb**: *"PUT"*
 
-*Defined in request-options.ts:31*
+*Defined in request-options.ts:43*
 
 The request verb.
 

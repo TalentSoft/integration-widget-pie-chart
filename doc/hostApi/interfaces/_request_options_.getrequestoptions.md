@@ -10,6 +10,7 @@
 
 ### Properties
 
+* [headers](_request_options_.getrequestoptions.md#headers)
 * [url](_request_options_.getrequestoptions.md#url)
 * [verb](_request_options_.getrequestoptions.md#verb)
 
@@ -17,13 +18,24 @@
 
 ## Properties
 
+<a id="headers"></a>
+
+### `<Optional>` headers
+
+**● headers**: *[Headers](_request_options_.headers.md)*
+
+*Defined in request-options.ts:17*
+
+Headers.
+
+___
 <a id="url"></a>
 
 ###  url
 
 **● url**: *`string`*
 
-*Defined in request-options.ts:9*
+*Defined in request-options.ts:13*
 
 The request url.
 
@@ -34,7 +46,7 @@ ___
 
 **● verb**: *"GET"*
 
-*Defined in request-options.ts:5*
+*Defined in request-options.ts:9*
 
 The request verb.
 

@@ -18,6 +18,8 @@ This interface represents the data and services offered by the Talentsoft host
 * [openUrlInNewTab](_widget_contract_myts_.mytshostservice.md#openurlinnewtab)
 * [requestExternalResource](_widget_contract_myts_.mytshostservice.md#requestexternalresource)
 * [setDataIsLoaded](_widget_contract_myts_.mytshostservice.md#setdataisloaded)
+* [setHeaderActionConfiguration](_widget_contract_myts_.mytshostservice.md#setheaderactionconfiguration)
+* [widgetIsEnlarged](_widget_contract_myts_.mytshostservice.md#widgetisenlarged)
 
 ---
 
@@ -29,7 +31,7 @@ This interface represents the data and services offered by the Talentsoft host
 
 **● getUrlForCurrentContext**: *`function`*
 
-*Defined in widget-contract-myts.ts:45*
+*Defined in widget-contract-myts.ts:47*
 
 **warning** This method is deprecated and should not be used.
 
@@ -51,7 +53,7 @@ ___
 
 **● loadData**: *`function`*
 
-*Defined in widget-contract-myts.ts:29*
+*Defined in widget-contract-myts.ts:31*
 
 **warning** This method is deprecated and should not be used.
 
@@ -67,7 +69,7 @@ ___
 
 **● openUrlInCurrentTab**: *`function`*
 
-*Defined in widget-contract-myts.ts:41*
+*Defined in widget-contract-myts.ts:43*
 
 This method allows to create an autoconnect link and open it in the current tab.
 
@@ -89,7 +91,7 @@ ___
 
 **● openUrlInNewTab**: *`function`*
 
-*Defined in widget-contract-myts.ts:37*
+*Defined in widget-contract-myts.ts:39*
 
 This method allows to create an autoconnect link and open it in a new tab.
 
@@ -111,7 +113,7 @@ ___
 
 **● requestExternalResource**: *`function`*
 
-*Defined in widget-contract-myts.ts:49*
+*Defined in widget-contract-myts.ts:51*
 
 This methods allows to send an authentified request to an external resource.
 
@@ -133,7 +135,7 @@ ___
 
 **● setDataIsLoaded**: *`function`*
 
-*Defined in widget-contract-myts.ts:33*
+*Defined in widget-contract-myts.ts:35*
 
 This method must be called when the widget is ready to be displayed to the user.
 
@@ -141,6 +143,44 @@ This method must be called when the widget is ready to be displayed to the user.
 ▸(): `void`
 
 **Returns:** `void`
+
+___
+<a id="setheaderactionconfiguration"></a>
+
+###  setHeaderActionConfiguration
+
+**● setHeaderActionConfiguration**: *`function`*
+
+*Defined in widget-contract-myts.ts:55*
+
+This method allows to configure actions displayed in the widget header.
+
+#### Type declaration
+▸(configuration: *[HeaderActionConfiguration](_header_action_configuration_.headeractionconfiguration.md)*): `void`
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| configuration | [HeaderActionConfiguration](_header_action_configuration_.headeractionconfiguration.md) |
+
+**Returns:** `void`
+
+___
+<a id="widgetisenlarged"></a>
+
+###  widgetIsEnlarged
+
+**● widgetIsEnlarged**: *`function`*
+
+*Defined in widget-contract-myts.ts:59*
+
+This method returns if the widget is enlarged or not.
+
+#### Type declaration
+▸(): `boolean`
+
+**Returns:** `boolean`
 
 ___
 

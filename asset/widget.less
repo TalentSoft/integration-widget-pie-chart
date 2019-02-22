@@ -1,4 +1,6 @@
-﻿.widget-title {
+﻿@import "~@talentsoft-opensource/hylia/utilities/variables.less";
+
+.widget-title {
     text-align: center;
     width: 100%;
     display: block;
@@ -16,4 +18,43 @@
     color: #064d9d;
     font-size: 0.8em;
     margin-bottom: 10px;
+}
+
+.widget__enlarged
+{
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+.widget-enlarged-table {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    
+    td {
+        padding: 1rem;
+    }
+
+    thead th {
+        font-family: @condensed_regular;
+
+        padding: 1rem;
+
+        border-bottom: 0.1rem solid @minion;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: @adept;
+    }
 }
