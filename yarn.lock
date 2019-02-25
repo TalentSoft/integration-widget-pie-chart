@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@talentsoft-opensource/display-tool-widget-mock@1.4.3-CAR-36265-1":
-  version "1.4.3-CAR-36265-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.3-CAR-36265-1.tgz#e1c2734d6fd62d2e117347ac549251ff3b21ce86"
-  integrity sha512-blVOGDBsyjKBMjzcsSUs2oZ7EV8ckL4KQY55Nwi13ABjETwvyIlOalzDzXo1SKuJW211YDi5w1+bn+kIsh3UCQ==
+"@talentsoft-opensource/display-tool-widget-mock@^1.4.3":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/display-tool-widget-mock/-/display-tool-widget-mock-1.4.4.tgz#29090d10106073733b94e969835f569852bb2032"
+  integrity sha512-71Qzzhfg46nA7I8dmzHNf9URihx975/EbBsaMeq8kafYoGL3HFw/VBvevaHxJeaqv89J90SyFBwz9on+X/QeUw==
   dependencies:
     "@talentsoft-opensource/integration-dll" "^1.3.2"
-    "@talentsoft-opensource/integration-widget-contract" "^1.6.0-CAR-36265-1"
+    "@talentsoft-opensource/integration-widget-contract" "^1.6.1"
     react "^16.6.3"
 
 "@talentsoft-opensource/hylia@^1.1.7":
@@ -21,20 +21,20 @@
   dependencies:
     react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-component@=1.7.1-CAR-36265-3":
-  version "1.7.1-CAR-36265-3"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.7.1-CAR-36265-3.tgz#8962ca759c9946ba0153da2df5b80ffe6ef82fd0"
-  integrity sha512-F76USljY/vqAvgmm46tw9rze6+R9jqJU6y4ta18LSaijFfdvNQffs6ZP6haEbaB20aR4PZlNS3RcyBcJyyLuTQ==
+"@talentsoft-opensource/integration-widget-component@=1.10.0", "@talentsoft-opensource/integration-widget-component@^1.9.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.10.0.tgz#2832707bef34e099af631e8175e9c2f02b59c411"
+  integrity sha512-lTbVE1GyQ3ZnP5XtKNKzc0OLt8ZrlhOEp8GRiuaWDs2AuuRRHH+4B6sKG3YgcUstCXsBrBn2WFHx3C0i/wwjhg==
   dependencies:
     "@talentsoft-opensource/hylia" "^1.1.7"
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-contract@=1.6.0-CAR-36265-1", "@talentsoft-opensource/integration-widget-contract@^1.6.0-CAR-36265-1":
-  version "1.6.0-CAR-36265-1"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.6.0-CAR-36265-1.tgz#2cc8f60ae59ddfc2d2a23a0ed99059d33ac010bb"
-  integrity sha512-EzeZhz+vnhYQG82l6/ljTqMAWIphIp7afC7gaBqunyjsdLzFaSeKX03YWQTgQWZ+dadqwuaVj9QwOzUfnAUA8Q==
+"@talentsoft-opensource/integration-widget-contract@=1.6.1", "@talentsoft-opensource/integration-widget-contract@^1.6.0", "@talentsoft-opensource/integration-widget-contract@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.6.1.tgz#93da80006df7c847b54a5b94ab472c694b76806f"
+  integrity sha512-uKbLhoHARPkPPF6tcn5aKRjmGT6tkG0fPcbItlIZa6JzOg3sz2NJhqTY6auaDX9cC/Wr6TCG1TupFXS9EPwpWg==
 
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -42,15 +42,15 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.4.2-CAR-36265-4":
-  version "2.4.2-CAR-36265-4"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.4.2-CAR-36265-4.tgz#10bda5ede6fb9d534010d7cc692b83441273af2e"
-  integrity sha512-PVhFtAiFSjdAB0KDyRG6Zk63WZsQjARpy7gidVEUxHGYIvygYYFDY6xFgqtukTiFlaRIeNdVPtT2erIpH9p/yA==
+"@talentsoft-opensource/widget-display-tool@2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.6.1.tgz#6e5ad640b33e4694f3303d24559cca78f2e83476"
+  integrity sha512-ntVIFq1laOcqHn8BxU3dMuXEPapTHp4b85WFD4WmP/9Z/O3ScHNqHW1pspS07LYI3tn9f8F0lItkGJcuMFza4A==
   dependencies:
-    "@talentsoft-opensource/display-tool-widget-mock" "1.4.3-CAR-36265-1"
+    "@talentsoft-opensource/display-tool-widget-mock" "^1.4.3"
     "@talentsoft-opensource/integration-dll" "^1.3.2"
-    "@talentsoft-opensource/integration-widget-component" "=1.7.1-CAR-36265-3"
-    "@talentsoft-opensource/integration-widget-contract" "=1.6.0-CAR-36265-1"
+    "@talentsoft-opensource/integration-widget-component" "^1.9.0"
+    "@talentsoft-opensource/integration-widget-contract" "^1.6.0"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"
     "@types/react-collapsible" "^2.2.0"
