@@ -20,18 +20,20 @@
   dependencies:
     react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-component@=1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.10.0.tgz#2832707bef34e099af631e8175e9c2f02b59c411"
+"@talentsoft-opensource/integration-widget-component@1.11.0-CAR-36265-1":
+  version "1.11.0-CAR-36265-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-component/-/integration-widget-component-1.11.0-CAR-36265-1.tgz#4a38b9bab048108da25ade6f6ec2588968814465"
+  integrity sha512-K0rCYPy6L7D9NtA3xmhzgMzqqmEc+OdzZonvUBAT/VhHvPML5a0CrSQbzsZjK9RrY2lIeMz2Tvcq82MQj2n1sw==
   dependencies:
     "@talentsoft-opensource/hylia" "^1.1.7"
     "@talentsoft-opensource/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.6.3"
 
-"@talentsoft-opensource/integration-widget-contract@=1.6.1", "@talentsoft-opensource/integration-widget-contract@^1.6.1":
+"@talentsoft-opensource/integration-widget-contract@1.6.1", "@talentsoft-opensource/integration-widget-contract@=1.6.1", "@talentsoft-opensource/integration-widget-contract@^1.6.1":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@talentsoft-opensource/integration-widget-contract/-/integration-widget-contract-1.6.1.tgz#93da80006df7c847b54a5b94ab472c694b76806f"
+  integrity sha512-uKbLhoHARPkPPF6tcn5aKRjmGT6tkG0fPcbItlIZa6JzOg3sz2NJhqTY6auaDX9cC/Wr6TCG1TupFXS9EPwpWg==
 
 "@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -39,13 +41,14 @@
   dependencies:
     perfect-scrollbar "^1.1.0"
 
-"@talentsoft-opensource/widget-display-tool@2.6.2":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.6.2.tgz#3aca1ea9a0f1df9dd27c0362e23b4a25d0766a04"
+"@talentsoft-opensource/widget-display-tool@2.7.0-CAR-36265-1":
+  version "2.7.0-CAR-36265-1"
+  resolved "https://registry.yarnpkg.com/@talentsoft-opensource/widget-display-tool/-/widget-display-tool-2.7.0-CAR-36265-1.tgz#bff4c30d5ae274473abdafa6c97dafbc571a4e77"
+  integrity sha512-3sStOPNvo1MjP8Ck7mzOd8RXGzZTQ8x6zUqjPtQzlfmxMWAtMeGZkucn1EXA+tGSDIwKTz9I84BSFSxKLFzBvg==
   dependencies:
     "@talentsoft-opensource/display-tool-widget-mock" "1.4.4"
     "@talentsoft-opensource/integration-dll" "^1.3.2"
-    "@talentsoft-opensource/integration-widget-component" "=1.10.0"
+    "@talentsoft-opensource/integration-widget-component" "1.11.0-CAR-36265-1"
     "@talentsoft-opensource/integration-widget-contract" "=1.6.1"
     "@types/node" "^10.12.11"
     "@types/react" "^16.3.18"

@@ -26,9 +26,8 @@
     "winston": "^3.1.0"
   },
   "devDependencies": {
-    "@talentsoft-opensource/integration-widget-component": "=1.10.0",
-    "@talentsoft-opensource/integration-widget-contract": "=1.6.1",
-    "@talentsoft-opensource/widget-display-tool": "2.6.2",
+    "@talentsoft-opensource/integration-widget-contract": "1.6.1",
+    "@talentsoft-opensource/widget-display-tool": "2.7.0-CAR-36265-1",
     "@types/highcharts": "^5.0.31",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
