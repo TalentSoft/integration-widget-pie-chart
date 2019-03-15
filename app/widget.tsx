@@ -121,7 +121,7 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
     public componentDidMount() {
         this.getData()
             .catch((r) => {
-                this.props.myTSHostService.raiseError("could not load data", "ERR_SERVICE");
+                this.props.myTSHostService.raiseError("could not load data", "ERR_SERVICE", r);
             });
     }
 

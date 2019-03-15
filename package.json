@@ -14,7 +14,7 @@
     "watch": "webpack --watch -d"
   },
   "dependencies": {
-    "@talentsoft-opensource/integration-dll": "3.0.0",
+    "@talentsoft-opensource/integration-dll": "3.2.0",
     "@types/react": "16.4.16",
     "highcharts": "6.1.4",
     "highcharts-react-official": "2.0.0",
@@ -26,8 +26,8 @@
     "winston": "3.1.0"
   },
   "devDependencies": {
-    "@talentsoft-opensource/integration-widget-contract": "3.0.0",
-    "@talentsoft-opensource/widget-display-tool": "3.0.0",
+    "@talentsoft-opensource/integration-widget-contract": "3.2.0",
+    "@talentsoft-opensource/widget-display-tool": "3.2.0",
     "@types/highcharts": "5.0.31",
     "clean-webpack-plugin": "0.1.19",
     "css-loader": "1.0.0",
