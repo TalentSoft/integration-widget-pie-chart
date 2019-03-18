@@ -30,6 +30,8 @@ export class EnlargedWidget extends React.Component<EnlargedWidgetProps, Expense
     private async getData() {
         const {widgetProps} = this.props;
 
+        widgetProps.myTSHostService.setDataIsLoading();
+
         const response = await widgetProps.myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api/enlarged'} );
         let data = [];
         data = JSON.parse(response.body);
