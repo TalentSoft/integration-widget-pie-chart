@@ -42,7 +42,7 @@ config = {
             libraryTarget: 'window'
         },
         plugins: [
-            new CleanWebpackPlugin([path.resolve(__dirname, 'dist')], { verbose: false }),
+            new CleanWebpackPlugin(),
             new webpack.DllReferencePlugin({
                 context: '.',
                 manifest: require('./node_modules/@talentsoft-opensource/integration-dll/dist/integration-manifest.json')
