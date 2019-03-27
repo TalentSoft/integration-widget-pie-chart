@@ -1,6 +1,6 @@
 {
   "name": "integration-widget-pie-chart",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A template for a pie chart widget",
   "main": "index.js",
   "repository": "https://bitbucket.org/talentsoft/integration-widget-pie-chart.git",
@@ -14,7 +14,7 @@
     "watch": "webpack --watch -d"
   },
   "dependencies": {
-    "@talentsoft-opensource/integration-dll": "3.3.0-TSM-197.1",
+    "@talentsoft-opensource/integration-dll": "3.3.0",
     "@types/react": "16.4.16",
     "highcharts": "6.1.4",
     "highcharts-react-official": "2.0.0",
@@ -26,8 +26,8 @@
     "winston": "3.1.0"
   },
   "devDependencies": {
-    "@talentsoft-opensource/integration-widget-contract": "3.3.0-TSM-197.1",
-    "@talentsoft-opensource/widget-display-tool": "3.3.0-TSM-197.1",
+    "@talentsoft-opensource/integration-widget-contract": "3.3.0",
+    "@talentsoft-opensource/widget-display-tool": "3.3.0",
     "@types/highcharts": "5.0.31",
     "clean-webpack-plugin": "2.0.1",
     "css-loader": "2.1.1",
