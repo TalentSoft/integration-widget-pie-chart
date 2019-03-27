@@ -59,10 +59,14 @@ export class Widget extends React.Component<WidgetProps, {data: highcharts.DataP
 
     private async getData() {
         const {myTSHostService} = this.props;
+
+        myTSHostService.setDataIsLoading();
+
         const response = await  myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api'} );
         let data = JSON.parse(response.body);
         const valuePoints = data as highcharts.DataPoint[];
         this.setState({ data: valuePoints });
+        
         myTSHostService.setDataIsLoaded();
     }
 
