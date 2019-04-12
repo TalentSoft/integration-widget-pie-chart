@@ -7,11 +7,11 @@
   "author": "Simon Bergot <sbergot@talentsoft.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack -p && ts-node ./build_manifest.ts",
     "build:debug": "webpack -d",
     "build:doc": "node ./copy_doc.js",
     "display": "node ./display.js",
-    "watch": "webpack --watch -d"
+    "watch": "webpack --watch -d"    
   },
   "dependencies": {
     "@talentsoft-opensource/integration-dll": "3.3.0",
@@ -23,6 +23,7 @@
     "opn": "5.4.0",
     "react": "16.6.3",
     "rimraf": "2.6.2",
+    "ts-node": "^8.0.3",
     "winston": "3.1.0"
   },
   "devDependencies": {
@@ -36,7 +37,7 @@
     "less-loader": "4.1.0",
     "style-loader": "0.23.1",
     "ts-loader": "5.2.2",
-    "typescript": "3.3.3",
+    "typescript": "^3.4.2",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3"
   }
