@@ -3,8 +3,7 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const widgetName = require('./widget.conf.json').widgetName;
 
-module.exports =
-    {
+config = {
         entry: {
             [widgetName]: './app/widget.tsx',
             hostmock: './mock/host-mock.ts'
@@ -43,10 +42,17 @@ module.exports =
             libraryTarget: 'window'
         },
         plugins: [
-            new CleanWebpackPlugin([path.resolve(__dirname, 'dist')], { verbose: false }),
+            new CleanWebpackPlugin(),
             new webpack.DllReferencePlugin({
                 context: '.',
                 manifest: require('./node_modules/@talentsoft-opensource/integration-dll/dist/integration-manifest.json')
             })
         ],
     };
+
+module.exports = (env, argv) => {
+    return {
+        ...config,
+        devtool: argv.mode === "development" ? "eval-source-map" : "none",
+    }
+}

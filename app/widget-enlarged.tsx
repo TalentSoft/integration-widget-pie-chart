@@ -27,27 +27,25 @@ export class EnlargedWidget extends React.Component<EnlargedWidgetProps, Expense
         this.state = { data: [] };
     }
 
-    private getData() {
+    private async getData() {
         const {widgetProps} = this.props;
 
-        widgetProps.myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api/enlarged'} )
-            .then((response) => {
-                let data = [];
-                try {
-                    data = JSON.parse(response.body);
-                } catch (e) {
-                    console.log(e);
-                }
+        widgetProps.myTSHostService.setDataIsLoading();
 
-                const expenses = data as Expenses[];
-                this.setState({ data: expenses });
+        const response = await widgetProps.myTSHostService.requestExternalResource({verb: 'GET', url: 'https://mockurl/api/enlarged'} );
+        let data = [];
+        data = JSON.parse(response.body);
 
-                widgetProps.myTSHostService.setDataIsLoaded();
-            })
+        const expenses = data as Expenses[];
+        this.setState({ data: expenses });
+
+        widgetProps.myTSHostService.setDataIsLoaded();
     }
 
     public componentDidMount() {
-        this.getData();
+        this.getData().catch((r) => {
+            this.props.widgetProps.myTSHostService.raiseError("could not load data", "ERR_SERVICE", r);
+        });
     }
 
     getExpenseType(status: ExpenseStatus): string {

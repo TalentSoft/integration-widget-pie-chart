@@ -12,7 +12,7 @@ logger.info('starting webpack watch on widget code...');
 
 let displayToolStarted = false;
 
-const compiler = webpack({ ...webpackConfiguration, mode: 'development' });
+const compiler = webpack({ ...webpackConfiguration(null, { mode: 'development' }), mode: 'development' });
 compiler.watch(
     {
         aggregateTimeout: 300,
@@ -25,6 +25,7 @@ compiler.watch(
             modules: false
         }));
         if (err) {
+            logger.error("error while compiling widget");
             logger.error(err);
         }
 
@@ -47,3 +48,4 @@ compiler.watch(
             opn('http://localhost:' + port);
         }
     })
+

@@ -3,7 +3,6 @@
  */
 import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
 import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
-import { AppHeaderActionConfiguration } from '@talentsoft-opensource/integration-widget-component';
 import { ExpenseStatus } from '../app/expense-status';
 
 export const hostmock: HostMock = {
@@ -109,9 +108,4 @@ export const hostmock: HostMock = {
     getAutoConnectUrl(url: string): string {
         return url;
     },
-
-    // By default, this is a no operation
-    setHeaderActionConfiguration: (configuration: AppHeaderActionConfiguration["configuration"]) => {
-        return Promise.resolve();
-    }
 }
