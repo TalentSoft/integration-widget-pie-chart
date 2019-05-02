@@ -1,7 +1,7 @@
 /**
  * This file contains the callbacks that you can modify to test the display of your widget
  */
-import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/mock-definitions'
+import { HostMock } from '@talentsoft-opensource/widget-display-tool/src/host/mock-definitions'
 import { HttpResponse, RequestOptions } from '@talentsoft-opensource/integration-widget-contract'
 import { ExpenseStatus } from '../app/expense-status';
 
@@ -99,13 +99,5 @@ export const hostmock: HostMock = {
      */
     configuration: {
         foo: "bar"
-    },
-
-    /**
-     * This function is called to generate the autoconnect url when using
-     * openUrlinNewTab or openUrlinCurrentTab
-     */
-    getAutoConnectUrl(url: string): string {
-        return url;
     },
 }
